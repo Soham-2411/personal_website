@@ -27,12 +27,14 @@ class _MainPageState extends State<MainPage> {
           end: Alignment.centerRight,
         )),
         padding: const EdgeInsets.all(30),
-        child: Column(
-          children: [
-            DesktopNavBar(navbarPage: widget.pageNo),
-            SizedBox(height: w * 0.02),
-            Center(child: (widget.pageNo == 0) ? Description() : Container())
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              DesktopNavBar(navbarPage: widget.pageNo),
+              SizedBox(height: w * 0.02),
+              Center(child: (widget.pageNo == 0) ? Description() : Container())
+            ],
+          ),
         ),
       ),
     );

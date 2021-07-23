@@ -54,6 +54,9 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
             ),
           ),
         ),
+        const SizedBox(
+          width: 10,
+        ),
         Container(
           decoration: BoxDecoration(
             borderRadius: const BorderRadius.all(
@@ -87,6 +90,9 @@ class _DesktopNavBarState extends State<DesktopNavBar> {
                       (widget.navbarPage == 1) ? Colors.white : Colors.white),
             ),
           ),
+        ),
+        const SizedBox(
+          width: 10,
         ),
         Container(
           decoration: BoxDecoration(
