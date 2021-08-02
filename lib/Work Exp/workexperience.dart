@@ -70,6 +70,7 @@ class WorkExperience extends StatelessWidget {
       ),
     );
   }
+
   Widget displayUI(double w, double h, int index, String company,
       String duration, String title, String description) {
     return Card(

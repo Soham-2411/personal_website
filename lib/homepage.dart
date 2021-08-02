@@ -27,6 +27,7 @@ class Description extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                SizedBox(height: w * 0.02),
                 RichText(
                   text: TextSpan(children: [
                     TextSpan(
@@ -92,62 +93,10 @@ class Description extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      IconButton(
-                        icon: Container(
-                          width: w * 0.04,
-                          decoration: const BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage('assets/Github_logo.png'),
-                                fit: BoxFit.cover),
-                            shape: BoxShape.circle,
-                          ),
-                        ),
-                        onPressed: () {
-                          html.window.open(socialMediaLinks[0], '_black');
-                        },
-                      ),
-                      IconButton(
-                        icon: Container(
-                          width: w * 0.04,
-                          decoration: const BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage('assets/Instagram_logo.png'),
-                                fit: BoxFit.cover),
-                            shape: BoxShape.circle,
-                          ),
-                        ),
-                        onPressed: () {
-                          html.window.open(socialMediaLinks[1], '_black');
-                        },
-                      ),
-                      IconButton(
-                        icon: Container(
-                          width: w * 0.04,
-                          decoration: const BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage('assets/LinkedIn_logo.png'),
-                                fit: BoxFit.cover),
-                            shape: BoxShape.circle,
-                          ),
-                        ),
-                        onPressed: () {
-                          html.window.open(socialMediaLinks[2], '_black');
-                        },
-                      ),
-                      IconButton(
-                        icon: Container(
-                          width: w * 0.04,
-                          decoration: const BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage('assets/medium_logo.jpeg'),
-                                fit: BoxFit.cover),
-                            shape: BoxShape.circle,
-                          ),
-                        ),
-                        onPressed: () {
-                          html.window.open(socialMediaLinks[3], '_black');
-                        },
-                      ),
+                      iconButton(w, 'assets/Github_logo.png', 0),
+                      iconButton(w, 'assets/Instagram_logo.png', 1),
+                      iconButton(w, 'assets/LinkedIn_logo.png', 2),
+                      iconButton(w, 'assets/medium_logo.jpeg', 3)
                     ],
                   ),
                 ),
@@ -157,14 +106,31 @@ class Description extends StatelessWidget {
               width: w * 0.2,
               height: h * 0.6,
               decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                  shape: BoxShape.circle,
+                  //borderRadius: BorderRadius.all(Radius.circular(15)),
                   image: DecorationImage(
-                      image: AssetImage('assets/Soham_profile.jpg'),
-                      fit: BoxFit.cover)),
+                    image: AssetImage('assets/Soham_profile_circle.png'),
+                  )),
             )
           ],
         ),
       ),
+    );
+  }
+
+  Widget iconButton(double w, String image, int index) {
+    return IconButton(
+      hoverColor: Colors.transparent,
+      icon: Container(
+        width: w * 0.04,
+        decoration: BoxDecoration(
+          image: DecorationImage(image: AssetImage(image), fit: BoxFit.cover),
+          shape: BoxShape.circle,
+        ),
+      ),
+      onPressed: () {
+        html.window.open(socialMediaLinks[index], '_black');
+      },
     );
   }
 }

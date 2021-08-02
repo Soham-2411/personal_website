@@ -17,22 +17,27 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
-    return Scaffold(
-      body: Container(
-        height: h,
-        width: w,
-        decoration: BoxDecoration(
-            gradient: LinearGradient(
-          colors: [HexColor('#cc2b5e'), HexColor('#753a88')],
-          begin: Alignment.centerLeft,
-          end: Alignment.centerRight,
-        )),
-        padding: const EdgeInsets.all(30),
-        child: SingleChildScrollView(
+    return Container(
+      height: h,
+      width: w,
+      decoration: BoxDecoration(
+          gradient: LinearGradient(
+        colors: [HexColor('#cc2b5e'), HexColor('#753a88')],
+        begin: Alignment.centerLeft,
+        end: Alignment.centerRight,
+      )),
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        appBar: AppBar(
+          elevation: 0,
+          backgroundColor: Colors.black.withOpacity(0.2),
+          actions: [DesktopNavBar(navbarPage: widget.pageNo)],
+        ),
+        body: SingleChildScrollView(
           child: Column(
             children: [
-              DesktopNavBar(navbarPage: widget.pageNo),
-              SizedBox(height: w * 0.02),
+              //DesktopNavBar(navbarPage: widget.pageNo),
+              //SizedBox(height: w * 0.02),
               Center(
                   child:
                       (widget.pageNo == 0) ? Description() : WorkExperience())
