@@ -7,7 +7,8 @@ List<String> socialMediaLinks = [
   'https://github.com/Soham-2411',
   'https://www.instagram.com/_soham_sakaria/',
   'https://www.linkedin.com/in/soham-sakaria-13251718b/',
-  'https://medium.com/@sohamsakaria'
+  'https://medium.com/@sohamsakaria',
+  'https://github.com/Soham-2411/personal_website/raw/main/Soham%20Sakaria%20Resume.pdf'
 ];
 
 class Description extends StatelessWidget {
@@ -39,11 +40,11 @@ class Description extends StatelessWidget {
                     TextSpan(
                         text: "SOHAM\n",
                         style:
-                            TextStyle(color: Colors.white, fontSize: w * 0.09)),
+                            TextStyle(color: Colors.white, fontSize: w * 0.07)),
                     TextSpan(
                         text: "SAKARIA",
                         style:
-                            TextStyle(color: Colors.white, fontSize: w * 0.09)),
+                            TextStyle(color: Colors.white, fontSize: w * 0.07)),
                   ]),
                 ),
                 Padding(
@@ -55,6 +56,26 @@ class Description extends StatelessWidget {
                       style:
                           TextStyle(color: Colors.white, fontSize: w * 0.015),
                     ),
+                  ),
+                ),
+                SizedBox(
+                  height: w * 0.02,
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        primary: Colors.orange[900],
+                        elevation: 10,
+                        shadowColor: Colors.orange,
+                        shape: const RoundedRectangleBorder(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(15))),
+                        padding: const EdgeInsets.fromLTRB(20, 20, 20, 20)),
+                    child: const Text("Download Resume"),
+                    onPressed: () {
+                      html.window.open(socialMediaLinks[4], '_black');
+                    },
                   ),
                 ),
                 Padding(
@@ -129,7 +150,7 @@ class Description extends StatelessWidget {
                       ),
                     ],
                   ),
-                )
+                ),
               ],
             ),
             Container(

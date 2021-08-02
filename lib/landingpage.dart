@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:personal_website/Navbar/navbar.dart';
+import 'package:personal_website/Work%20Exp/workexperience.dart';
 import 'package:personal_website/homepage.dart';
 
 class MainPage extends StatefulWidget {
@@ -32,7 +33,9 @@ class _MainPageState extends State<MainPage> {
             children: [
               DesktopNavBar(navbarPage: widget.pageNo),
               SizedBox(height: w * 0.02),
-              Center(child: (widget.pageNo == 0) ? Description() : Container())
+              Center(
+                  child:
+                      (widget.pageNo == 0) ? Description() : WorkExperience())
             ],
           ),
         ),
