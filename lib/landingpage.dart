@@ -26,27 +26,71 @@ class _MainPageState extends State<MainPage> {
           children: [
             Column(
               children: [
-                Container(
-                  height: h * 0.1,
-                  width: w * 0.05,
-                  color: Colors.black,
-                  child: Center(
+                Stack(
+                  children: [
+                    Container(
+                      height: h,
+                      width: w * 0.035,
+                      color: HexColor('#171517'),
                       child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text("S",
-                          style: TextStyle(
-                              fontSize: w * 0.03, color: Colors.white)),
-                      Text("Soham",
-                          style: TextStyle(
-                              fontSize: w * 0.01, color: Colors.white))
-                    ],
-                  )),
-                ),
-                Container(
-                  height: h * 0.9,
-                  width: w * 0.05,
-                  color: HexColor('#171517'),
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          IconButton(
+                            icon: Icon(
+                              Icons.home_outlined,
+                              color: Colors.white,
+                              size: w * 0.018,
+                            ),
+                            onPressed: () {},
+                          ),
+                          SizedBox(height: h * 0.03),
+                          IconButton(
+                            icon: Icon(
+                              Icons.person_outline,
+                              color: Colors.white,
+                              size: w * 0.018,
+                            ),
+                            onPressed: () {},
+                          ),
+                          SizedBox(height: h * 0.03),
+                          IconButton(
+                            icon: Icon(
+                              Icons.settings_outlined,
+                              color: Colors.white,
+                              size: w * 0.018,
+                            ),
+                            onPressed: () {},
+                          ),
+                          SizedBox(height: h * 0.03),
+                          IconButton(
+                            icon: Icon(
+                              Icons.remove_red_eye_outlined,
+                              color: Colors.white,
+                              size: w * 0.018,
+                            ),
+                            onPressed: () {},
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      height: h * 0.1,
+                      width: w * 0.035,
+                      color: Colors.black,
+                      child: Center(
+                          child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text("S",
+                              style: TextStyle(
+                                  fontSize: w * 0.03, color: Colors.white)),
+                          Text("Soham",
+                              style: TextStyle(
+                                  fontSize: w * 0.01, color: Colors.white))
+                        ],
+                      )),
+                    ),
+                  ],
                 ),
               ],
             )
