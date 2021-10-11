@@ -17,32 +17,40 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
-    return Container(
-      height: h,
-      width: w,
-      decoration: BoxDecoration(
-          gradient: LinearGradient(
-        colors: [HexColor('#cc2b5e'), HexColor('#753a88')],
-        begin: Alignment.centerLeft,
-        end: Alignment.centerRight,
-      )),
-      child: Scaffold(
-        backgroundColor: Colors.transparent,
-        appBar: AppBar(
-          elevation: 0,
-          backgroundColor: Colors.black.withOpacity(0.2),
-          actions: [DesktopNavBar(navbarPage: widget.pageNo)],
-        ),
-        body: SingleChildScrollView(
-          child: Column(
-            children: [
-              //DesktopNavBar(navbarPage: widget.pageNo),
-              //SizedBox(height: w * 0.02),
-              Center(
-                  child:
-                      (widget.pageNo == 0) ? Description() : WorkExperience())
-            ],
-          ),
+    return Scaffold(
+      body: Container(
+        height: h,
+        width: w,
+        color: HexColor('#1b191b'),
+        child: Row(
+          children: [
+            Column(
+              children: [
+                Container(
+                  height: h * 0.1,
+                  width: w * 0.05,
+                  color: Colors.black,
+                  child: Center(
+                      child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text("S",
+                          style: TextStyle(
+                              fontSize: w * 0.03, color: Colors.white)),
+                      Text("Soham",
+                          style: TextStyle(
+                              fontSize: w * 0.01, color: Colors.white))
+                    ],
+                  )),
+                ),
+                Container(
+                  height: h * 0.9,
+                  width: w * 0.05,
+                  color: HexColor('#171517'),
+                ),
+              ],
+            )
+          ],
         ),
       ),
     );
