@@ -1,0 +1,54 @@
+
+.vl{
+    width: 3px;
+    background-image: linear-gradient( #EB455F, #2B3467);
+    height: 180px;
+}
+
+.Welcomeh1{
+    margin-top: 0%;
+    font-size: 600%;
+    color: #FCFFE7;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 100;
+}
+h1{
+    color: #FCFFE7;
+}
+
+img{
+    width: 1.5%;
+}
+
+p{
+    color: whitesmoke;
+    margin-top: 0%;
+    margin-right: 55%;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.VerticalSpacing{
+    width: 10px;
+    height: 180px;
+}
+
+.heading{
+    margin-top: 10%;
+}
+
+div{
+    margin-left: 5%;
+}
+
+.contactme{
+    position: absolute;
+    bottom: 5%;
+}
+
+
+body{
+    text-align: left;
+    margin: 0;
+    background-color: #041C32;
+    font-family: 'Sofia Sans', sans-serif;
+}
