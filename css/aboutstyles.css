@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ccd6f6;   
+    font-family: "Poppins", sans-serif;
+}
+
+#about{
+    height: 100vh;
+}
+
+.aboutme{
+    padding-top: 6%;
+    font-size: xx-large;
+}
+
+.aboutme p{
+    font-size: medium;
+}
+
+.aboutme h1{
+    letter-spacing: 2;
+}
+
+.skillsection-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    padding-right: 20%;
+    padding-left: 20%;
+    background-color: transparent;
+}
+
+.skillsection-headers{
+    padding-right: 50%;
+}
+
+table{
+    width:100%;
+}
+
+th{
+    text-align: left;
+}
+
+.skillsection-skills div{
+    display: flex;
+    flex-direction: row;
+}

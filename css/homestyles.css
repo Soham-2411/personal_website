@@ -6,26 +6,43 @@
     font-family: "Poppins", sans-serif;
 }
 
-.hiIntro{
-    color: #47b9a5;
-    font: "";
+
+@font-face {
+    font-family: sourceCode;
+    src: url(sourcefont.ttf);
 }
 
-.soham{
-    font-size: 50px;
+.name-container h4 {
+    color: #47b9a5;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 20px;
+}
+
+.name-container h1{
+    font-size: 60px;
     color: #ccd6f6;
+    margin-bottom: 20px;
+}
+
+.name-container p{
+    font-size: 18px;
+    color: #ccd6f6;
+    opacity: 0.7;
+    padding-top: 20px;
+    margin-right: 50%;
 }
 
 .name-container{
-    margin-top: 20%;
+    padding-top: 12%;
+    padding-left: 15%;
+    padding-right: 5%;
     background-color: transparent;
 }
 
 #home{
-    height: 150vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
+    justify-content: start;
+    height: 100vh;
 }
 
 .aboutme{
@@ -33,7 +50,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 30%;
+    margin-left: 30%;
+    margin-top: 100px;
+    margin-right: 30%;
 }
 
 .aboutline{
@@ -44,7 +63,6 @@
 .aboutme h1, h3{
     padding-bottom: 20px;
 }
-
 
 .contact{
     margin-top: 10%;
