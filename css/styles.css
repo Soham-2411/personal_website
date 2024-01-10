@@ -1,67 +1,94 @@
-a{
-    text-align: center;
+body{
+    background-color: #0f172a;
 }
 
-.contactme{
-    margin-top: 10%;
-    text-align: center;
-    color: #FCFFE7;
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
-.contactmeicons{
-    text-align: center;
+section{
+    scroll-snap-align: always;
 }
 
-h2{
-    font-size: 1.4rem;
-    color: #FCFFE7;
-    font-family: 'Montserrat', sans-serif;
-    margin-right: 55%;
-    font-weight: 100;
-}
-
-h3{
-    position: absolute;
-    bottom: 2px;
-    color: white;
-}
-
-
-.heading{
-    padding-top: 10%;
-    background-color: #2B2D2F;
-    height: 100vh;
-    padding-left: 5%;
-    
-}
-
-
-html, body{
-    text-align: left;
-    background-blend-mode:overlay;
+* {
     margin: 0;
-    background-color: #041C32;
-    font-family: 'Sofia Sans', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;   
+    font-family: "Poppins", sans-serif;
+}
+/*
+background color: #0f172a
+color: #47b9a5 seagreen
+textcolor: #ccd6f6
+*/
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0px 8px 40px black;
+    /* border-bottom: 2px solid #DDE6ED; */
+    background-color: #060C1B;
 }
 
-img{
-    width: 30px;
-    margin-right: 10px;
+.name{
+    font-size: 32px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-
-.vl{
-    width: 3px;
-    background-image: linear-gradient( #EB455F, #2B3467);
-    height: 200px;
-    margin-right: 25px;
+.navbar a{
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+    border-bottom: none;
+    text-decoration: none;
 }
 
-.Welcomeh1{
-    margin-top: 0%;
-    font-size: 10rem;
-    color: #FCFFE7;
-    font-family: 'Sofia Sans', sans-serif;
-    font-weight: 100;
-    margin-bottom: 1%;
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: 0.3s; 
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+/* .sociallinks{
+    position: absolute;
+    margin-top: 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -20px 20px 20px black;
+} */
+
+
+#home, #experience, #projects, #awards{
+    height: 100vh;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.padding{
+    height: 100px;
 }
