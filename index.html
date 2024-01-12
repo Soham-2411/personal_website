@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/aboutstyles.css">
     <link rel="stylesheet" href="css/experiencestyles.css">
     <link rel="stylesheet" href="css/projectstyles.css">
+    <link rel="stylesheet" href="css/contactstyles.css">
     <link rel="JavaScript" href="app.js">
 </head>
 
@@ -24,10 +25,6 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-
-    <section id="contact">
-        
-    </section>
     
     <section id="home">
         <div class="name-container">
@@ -57,53 +54,32 @@
         <div class="sub-heading">
             <h1>ABOUT ME</h1>
             <div class="sub-heading-line"></div>
-            <p>
+            <p class="aboutme-short-desc">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nihil laudantium voluptas quo, a deserunt voluptates explicabo
             </p>
         </div>
         <div class="skillsection-container">
-            <table>
-                <tr>
-                    <th class="skillsection-headers knowme">Get to know me!</th>
-                    <th class="skillsection-headers">Skills</th>
-                </tr>
-                <tr>
-                    <td>
-                        <p style="padding-right: 50%">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa amet asperiores odit, rerum tempora perspiciatis a perferendis vero nam libero quibusdam fugiat ipsum dolorem dolores error sint eos iste quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti necessitatibus odio veniam aut error totam voluptate alias explicabo praesentium amet saepe nostrum, ea facere aperiam ad maxime. Aliquid, itaque eum?
-                        </p>
-                    </td>
-                    <td class="listedskills-container">
-                        <div class="listedskills">
-                            <p>HTML</p>
-                        </div>
-                        <div class="listedskills">
-                            <p>CSS</p>
-                        </div>
-                        <div class="listedskills">
-                            <p>JavaScript</p>
-                        </div>
-                    </td>
-                    <td class="listedskills-container">
-                        <div class="listedskills">
-                            <p>Flutter</p>
-                        </div>
-                        <div class="listedskills">
-                            <p>Java</p>
-                        </div>
-                        <div class="listedskills">
-                            <p>C/C++</p>
-                        </div>
-                        <div class="listedskills">
-                            <p>Python</p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+            <div class="skillsection-knowme">
+                <h2> Get to know me!</h2>
+                <p id="know-me-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus alias tempore nesciunt ratione quia, veniam possimus ad voluptatibus commodi animi deleniti quas veritatis maxime aliquam, vel, error dolore illo esse? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis unde asperiores sed hic impedit qui, ipsa deleniti amet aut alias, tempore voluptatum, beatae doloremque quidem minus recusandae atque doloribus. Nisi!</p>
+            </div>
+            <div class="skillsection-skills">
+                <h2> Skills</h2>
+                <div class="skillsection-listedskills-container">
+                    <div class="listedskills">HTML</div>
+                    <div class="listedskills">CSS</div>
+                    <div class="listedskills">JavaScript</div>
+                </div>
+                <div class="skillsection-listedskills-container">
+                    <div class="listedskills">Flutter</div>
+                    <div class="listedskills">Java</div>
+                    <div class="listedskills">C/C++</div>
+                    <div class="listedskills">Python</div>
+                </div>
+            </div>
         </div>
         
     </section>
-
     <div class="separationline"></div>
     <section id="experience">
         <section class = "padding"></section>
@@ -199,6 +175,33 @@
                         Live Link
                     </button>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-email">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <h2>Email</h2>
+                    <input type="hidden" name="access_key" value="61e18de1-8dc2-47fc-8bd4-f9becc0978d6">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea  name="message" rows="4" placeholder="Your message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="contact-links">
+                <a href="https://github.com/Soham-2411" target="_blank">
+                    <button class="contact-social-button">Github</button>
+                </a>
+                <a href="https://www.linkedin.com/in/soham-sakaria-13251718b/" target="_blank">
+                    <button class="contact-social-button">LinkedIn</button>
+                </a>
+                <a href="https://twitter.com/SakariaSoh88674" target="_blank">
+                    <button class="contact-social-button">Twitter</button>
+                </a>
+
             </div>
         </div>
     </section>

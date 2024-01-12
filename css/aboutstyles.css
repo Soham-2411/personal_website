@@ -6,31 +6,42 @@
 .skillsection-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     padding-top: 100px;
     padding-right: 20%;
     padding-left: 20%;
 }
 
-.skillsection-headers{
-    font-size: 20px;
+.skillsection-knowme{
+    margin-right: 20%;
+}
+
+.skillsection-knowme p{
+    font-size: 1.25vw;
+}
+
+.aboutme-short-desc{
+    font-size: 1vw;
+}
+
+.skillsection-knowme h2, .skillsection-skills h2{
+    margin-bottom: 20px;
+    font-size: 1.7vw;
     color: #47b9a5;
 }
 
-.knowme{
-    padding-right: 30%;
+.skillsection-skills{
 }
 
-table{
-    width:100%;
+.skillsection-listedskills-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
 }
 
 .listedskills{
     background-color: #2D3446;
     opacity: 0.4;
-    padding: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px 10px;
     color: white;
     border-radius: 5px;
     margin-right: 10px;
@@ -46,7 +57,27 @@ table{
     padding-bottom: 10px;
 }
 
-th{
-    text-align: left;
-    margin-top: 20px;
+
+@media screen and (max-width: 1000px) {
+    .skillsection-container{
+        flex-direction: column;
+    }
+
+    .skillsection-knowme p{
+        font-size: 20px;
+    }
+
+    .skillsection-knowme h2, .skillsection-skills h2{
+        font-size: 25px;
+    }
+
+    .skillsection-knowme, .skillsection-skills{
+        margin-right: 0%;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    .aboutme-short-desc{
+        font-size: 16px;
+    }
 }

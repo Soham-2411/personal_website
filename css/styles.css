@@ -72,28 +72,11 @@ textcolor: #ccd6f6
     color: aquamarine;
 }
 
-/* .sociallinks{
-    position: absolute;
-    margin-top: 15%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: white;
-    width: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: -20px 20px 20px black;
-} */
-
 .separationline{
     width: 100%;
     border-top: 1px solid white;
+    display: none;
 }
-
-/* .padding{
-    height: 100px;
-} */
 
 .sub-heading{
     display: flex;
@@ -115,4 +98,22 @@ textcolor: #ccd6f6
     width: 120px;
     margin-bottom: 40px;
     border-top: 2px solid #47b9a5;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .sub-heading h1{
+        font-size: 25px;
+    }
+
+    .sub-heading-line{
+        width: 60px;
+    }
+
+    .header{
+        display: none;
+    }
 }
