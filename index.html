@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/homestyles.css">
     <link rel="stylesheet" href="css/aboutstyles.css">
     <link rel="stylesheet" href="css/experiencestyles.css">
+    <link rel="stylesheet" href="css/projectstyles.css">
+    <link rel="JavaScript" href="app.js">
 </head>
 
 <body>
@@ -19,10 +21,13 @@
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
-            <a href="#awards">Awards</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
+
+    <section id="contact">
+        
+    </section>
     
     <section id="home">
         <div class="name-container">
@@ -38,9 +43,11 @@
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quo maiores vero modi et eveniet quibusdam quasi dolorem, perferendis, distinctio ex pariatur accusantium iure fugit adipisci magni voluptatum numquam. Voluptas.
             </p>
-            <button class="aboutme-button">
-                <a href="#about">About me</a>
-            </button>
+                <a href="#about">
+                    <button class="aboutme-button">
+                        About me
+                    </button>
+                </a>
         </div>
         
 
@@ -97,6 +104,7 @@
         
     </section>
 
+    <div class="separationline"></div>
     <section id="experience">
         <section class = "padding"></section>
         <div class="sub-heading">
@@ -153,17 +161,48 @@
             </div>
         </div>
 
-
     </section>
-    
+    <div class="separationline"></div>
+
     <section id="projects">
         <section class = "padding"></section>
-        <h1>Projects</h1>
+        <div class="sub-heading">
+            <h1>Projects</h1>
+            <div class="sub-heading-line"></div>
+        </div>
+
+        <div class="project-container">
+            <div class="project-mobile-container">
+                <img src="Images/mobile.png" alt="" class="project-mobile">
+                <img src="Images/ThinkArt.png" alt="" class="project-mobile-photo">
+            </div>
+            
+            <div class="project-description">
+                <h1>Project-name</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam optio repellendus necessitatibus sint, corporis delectus culpa quod nisi qui reiciendis aperiam dignissimos labore blanditiis quis eaque, quas id? Saepe, consectetur?</p>
+                <div class="project-description-keywords">
+                    <div class="project-tags">
+                        <h3>Flutter development</h3>
+                    </div>
+                    <div class="project-tags">
+                        <h3>Tag1</h3>
+                    </div>
+                </div>
+                <div class="project-description-link-buttons">
+                    <a href="https://github.com/Soham-2411/ThinkArt" target="_blank">
+                        <button onclick="onGithubLinkClick()">
+                            Github Link
+                        </button>
+                    </a>
+                    
+                    <button>
+                        Live Link
+                    </button>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="awards">
-        <section class = "padding"></section>
-        <h1>Awards</h1>
-    </section>
+    
 </body>
 
 </html>

@@ -107,12 +107,12 @@ textcolor: #ccd6f6
 
 .sub-heading h1{
     letter-spacing: 2;
-    font-size: xx-large;
+    font-size: 40px;
     padding-bottom: 20px;
 }
 
 .sub-heading-line{
-    width: 20%;
-    margin-bottom: 20px;
+    width: 120px;
+    margin-bottom: 40px;
     border-top: 2px solid #47b9a5;
 }
