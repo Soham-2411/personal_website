@@ -4,6 +4,16 @@ body{
 
 }
 
+@font-face {
+    font-family: NunitoSans;
+    src: url(Fonts/Nunito_Sans/static/NunitoSans_10pt-Light.ttf);
+}
+
+@font-face {
+    font-family: NunitoSansBold;
+    src: url(Fonts/Nunito_Sans/static/NunitoSans_10pt-ExtraBold.ttf);
+}
+
 html{
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
@@ -20,7 +30,20 @@ section{
     padding: 0;
     box-sizing: border-box;
     color: black;   
-    font-family: "Poppins", sans-serif;
+    font-family: NunitoSans, sans-serif;
+}
+
+p{
+    font-weight: 800;
+    opacity: 0.7;
+    letter-spacing: 1.1px;
+}
+
+li{
+    font-weight: 800;
+    opacity: 0.7;
+    letter-spacing: 1.1px;
+    margin-bottom: 10px;
 }
 /*
 background color: #0f172a
@@ -39,7 +62,7 @@ textcolor: #ccd6f6
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    box-shadow: 0px 1px 100px grey;
+    box-shadow: 0px 10px 50px #a6a6a6;
     /* border-bottom: 2px solid #DDE6ED; */
     background-color: white;
 }

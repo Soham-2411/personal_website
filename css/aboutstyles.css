@@ -1,12 +1,12 @@
 #about{
-    padding-top: 50px;
-    padding-bottom: 200px;
+    padding-top: 20px;
+    padding-bottom: 100px;
 }
 
 .skillsection-container{
     display: flex;
     flex-direction: row;
-    padding-top: 100px;
+    padding-top: 40px;
     padding-right: 20%;
     padding-left: 20%;
 }
@@ -16,17 +16,17 @@
 }
 
 .skillsection-knowme p{
-    font-size: 1.25vw;
+    font-size: 0.9vw;
 }
 
 .aboutme-short-desc{
-    font-size: 1.25vw;
+    font-size: 1vw;
 }
 
 .skillsection-knowme h2, .skillsection-skills h2{
     margin-bottom: 20px;
     font-size: 1.7vw;
-    color: #7843e9;
+    color: black;
 }
 
 .skillsection-listedskills-container{
@@ -36,22 +36,35 @@
 }
 
 .listedskills{
-    background-color: #2D3446;
-    opacity: 0.4;
+    background-color: #e7e7e7;
+    opacity: 0.95;
     padding: 10px 10px;
-    color: white;
+    letter-spacing: 1.1px;
+    color: black;
+    font-weight: 800;
     border-radius: 5px;
     margin-right: 10px;
 }
 
-.listedskills p{
-    color: white;
-}
 
 .listedskills-container{
     display: flex;
     flex-direction: row;
     padding-bottom: 10px;
+}
+
+.contact-button{
+    margin: 20px auto;
+    padding: 10px 40px;
+    background-color: #7843e9;
+    border: transparent;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: large;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
 
