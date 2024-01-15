@@ -31,7 +31,7 @@ form{
 }
 
 form h2{
-    color: #47b9a5;
+    color: #7843e9;
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -40,7 +40,7 @@ form button{
     margin-top: 30px;
     width: 100px;
     padding: 10px 30px;
-    background-color: #47b9a5;
+    background-color: #7843e9;
     color: white;
     border-style: solid;
     border-radius: 10px;
@@ -64,7 +64,7 @@ form textarea{
 .contact-social-button{
     padding: 10px 30px;
     margin-left: 10%;
-    border: 2px solid #47b9a5;
+    border: 2px solid #7843e9;
     border-radius: 5px;
     background-color: transparent;
     margin-right: 20px;

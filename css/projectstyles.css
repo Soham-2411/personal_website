@@ -15,7 +15,7 @@
     position: relative;
     margin-left: 5%;
     margin-right: 100px;
-    width: 300px;
+    width: 50vw;
     height: 600px;
 }
 
@@ -56,7 +56,7 @@
     margin-bottom: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    border-left: 3px solid #47b9a5;
+    border-left: 3px solid #7843e9;
     border-radius: 5px;
     margin-right: 20px;
 }
@@ -64,16 +64,33 @@
 .project-description-link-buttons{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: start;
 }
 
 .project-description-link-buttons button{
     padding: 10px;
     width: 200px;
-    background-color: transparent;
-    border: 2px solid #47b9a5;
+    background-color: #7843e9;
+    border-radius: 10px;
+    border-style: solid;
 }
 
 .project-description-link-buttons button:hover{
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .project-mobile-container{
+        display: none;
+    }
+
+    .project-container{
+        display: block;
+        align-items: center;
+    }
+
+    .project-description{
+        margin-left: 20px;
+    }
 }

@@ -15,7 +15,7 @@
     position: absolute;
     width: 2px;
     height: 100%;
-    background: #47b9a5;
+    background: #7843e9;
     top: 0;
     left: 50%;
     margin-left: -3px;
@@ -87,9 +87,9 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    background-color: #47b9a5;
+    background-color: #7843e9;
     border-radius: 50%;
-    border: 1px solid #47b9a5;
+    border: 1px solid #7843e9;
     right: -5px;
     top: 56px;
     z-index: 10;

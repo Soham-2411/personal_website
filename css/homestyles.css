@@ -1,11 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;   
-    font-family: "Poppins", sans-serif;
+#home{
+    background-image: url("Images/White-background.jpg");
 }
-
 
 @font-face {
     font-family: sourceCode;
@@ -13,20 +8,26 @@
 }
 
 .name-container h4 {
-    color: #47b9a5;
+    /* color: #7843e9; */
+    color: black;
     font-family: 'Courier New', Courier, monospace;
     padding-bottom: 20px;
 }
 
 .name-container h1{
     font-size: 60px;
-    color: #ccd6f6;
+    /* color: #ccd6f6; */
+    color: black;
     margin-bottom: 20px;
+}
+
+.name-tagline{
+    font-size: 50px;
 }
 
 .name-container p{
     font-size: 18px;
-    color: #ccd6f6;
+    color: black;
     opacity: 0.7;
     padding-top: 20px;
     margin-right: 50%;
@@ -47,13 +48,14 @@
 .aboutme-button{
     margin: 50px auto;
     padding: 10px 40px;
-    background-color: transparent;
-    border: 2px solid #47b9a5;
+    background-color: #7843e9;
+    border: transparent;
+    border-style: solid;
     border-radius: 5px;
     font-size: large;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    color: #47b9a5;
+    color: white;
     font-weight: 800;
     letter-spacing: 2px;
     margin-bottom: 200px;
@@ -62,4 +64,23 @@
 .contact{
     margin-top: 10%;
     text-align: center;
+}
+
+@media screen and (max-width : 900px) {
+    .name-container h1{
+        font-size: 40px;
+    }
+
+    .name-tagline {
+        font-size: 30px;
+    }
+
+    .name-container p{
+        margin-right: 10%;
+    }
+
+    .name-container{
+        padding: 12% 20px;
+        margin: none;
+    }
 }
