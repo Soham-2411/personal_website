@@ -38,6 +38,7 @@ form button{
     color: white;
     border-style: solid;
     border-radius: 5px;
+    max-width: 60%;
     border-style: none;
 }
 
