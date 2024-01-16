@@ -19,9 +19,8 @@ form{
     border: none;
     align-items: center;
     justify-content: center;
-    padding: 20px 100px;
+    padding: 50px 100px;
     margin-top: 50px;
-    max-width: 90vw;
     border-radius: 10px;
 }
 
@@ -43,7 +42,7 @@ form button{
 }
 
 form input, form textarea{
-    width: 70vw;
+    width: 30vw;
     margin: 10px 0px;
     border: none;
     border-radius: 5px;
@@ -54,7 +53,7 @@ form input, form textarea{
 
 form textarea{
     padding-top: 10px;
-    height: 100px;
+    height: 150px;
 }
 
 #contact-links{
@@ -78,4 +77,13 @@ form textarea{
 
 .contact-social-links img{
     width: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    form{
+        padding: 50px 20px;
+    }
+    form input, form textarea{
+        width: 80vw;
+    }
 }
