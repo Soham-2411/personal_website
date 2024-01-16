@@ -1,33 +1,28 @@
 #contact{
-    background: rgba(0, 0, 0, 0.5);
-    margin-top: 200px;
-    padding-top: 60px;
+    background-image: url("Images/White-background.jpg");
+    padding-top: 10px;
+    padding-bottom: 100px;
 }
 
 .contact-container{
     display: flex;
-    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.contact-email{
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: start;
-}
 
 form{
-    background: transparent;
-    border: none;
+    background: whitesmoke;
     display: flex;
     flex-direction: column;
-    padding: 2vw 4vw;
-    width: 50%;
-    max-width: 600px;
+    text-align: center;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 100px;
+    margin-top: 50px;
+    max-width: 90vw;
     border-radius: 10px;
-    left: 20px;
 }
 
 form h2{
@@ -43,11 +38,12 @@ form button{
     background-color: #7843e9;
     color: white;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 5px;
+    border-style: none;
 }
 
 form input, form textarea{
-    width: 50vh;
+    width: 70vw;
     margin: 10px 0px;
     border: none;
     border-radius: 5px;
@@ -61,18 +57,25 @@ form textarea{
     height: 100px;
 }
 
-.contact-social-button{
-    padding: 10px 30px;
-    margin-left: 10%;
-    border: 2px solid #7843e9;
-    border-radius: 5px;
-    background-color: transparent;
-    margin-right: 20px;
-    margin-bottom: 100px;
+#contact-links{
+    background-color: black;
+    text-align: center;
 }
 
-.contact-links{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.contact-links-container{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.contact-links-container h2{
+    color: white;
+    margin-bottom: 50px;
+}
+
+.contact-social-links a{
+    padding: 0px 20px;
+}
+
+.contact-social-links img{
+    width: 30px;
 }

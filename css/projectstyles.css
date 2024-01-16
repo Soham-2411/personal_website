@@ -1,5 +1,6 @@
 #projects{
     padding-top: 50px;
+    margin-bottom: 50px;
 }
 
 .project-container{
@@ -7,6 +8,7 @@
     flex-direction: row;
     padding-left: 15%;
     padding-right: 100px;
+    padding-top: 40px;
     align-items: start;
     justify-content: space-between;
 }
@@ -54,7 +56,7 @@
 .project-tags{
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #f2f2f2;
     padding: 10px;
     border-left: 3px solid #7843e9;
     border-radius: 5px;
@@ -70,9 +72,7 @@
 .project-description-link-buttons button{
     padding: 10px;
     width: 200px;
-    background-color: #7843e9;
     border-radius: 10px;
-    border-style: solid;
 }
 
 .project-description-link-buttons button:hover{
@@ -88,9 +88,12 @@
     .project-container{
         display: block;
         align-items: center;
+        padding: 0px 40px;
+        margin-bottom: 40px;
     }
 
     .project-description{
-        margin-left: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }

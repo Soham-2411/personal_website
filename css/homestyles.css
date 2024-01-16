@@ -1,17 +1,18 @@
 #home {
     background-image: url("Images/White-background.jpg");
+    height: 100vh;
 }
 
 .name-container h4 {
     /* color: #7843e9; */
-    font-size: 20px;
+    font-size: 1.5vw;
     color: black;
     font-family: monospace;
     padding-bottom: 20px;
 }
 
 .name-container h1 {
-    font-size: 60px;
+    font-size: 3.5vw;
     /* color: #ccd6f6; */
     color: black;
     margin-bottom: 20px;
@@ -24,7 +25,7 @@
 }
 
 .name-container p {
-    font-size: 18px;
+    font-size: 1vw;
     color: black;
     opacity: 0.9;
     padding-top: 20px;
@@ -69,8 +70,12 @@
         font-size: 50px;
     }
 
-    .name-tagline {
-        font-size: 30px;
+    .name-container h4{
+        font-size: 12px;
+    }
+
+    .name-container p {
+        font-size: 15px;
     }
 
     .name-container p {
