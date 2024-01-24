@@ -1,5 +1,6 @@
 #home {
     background-image: url("Images/White-background.jpg");
+    height: 100vh;
 }
 
 .name-container h4 {
@@ -61,7 +62,7 @@
 
 .resume{
     position: absolute;
-    bottom: 80px;
+    bottom: 5vh;
     background-color: transparent;
     right: 45vw;
     width: 10vw;

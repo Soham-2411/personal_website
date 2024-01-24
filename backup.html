@@ -1,52 +1,218 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soham Sakaria</title>
-
+    <title>Document</title>
     <style>
-        .heading{
-            background-image: url("Images/Background.jpg");
-            background-size: cover;
-            background-blend-mode:overlay;
+        .project-container {
+            display: flex;
+            flex-direction: row;
+            padding-left: 15%;
+            padding-right: 100px;
+            padding-top: 40px;
+            align-items: start;
+            justify-content: space-between;
+        }
+
+        .project-mobile-container {
+            position: relative;
+            margin-left: 5%;
+            margin-right: 100px;
+            width: 50vw;
+            height: 600px;
+        }
+
+        .project-mobile {
+            width: 300px;
+            position: absolute;
+            top: 0;
+            z-index: 10;
+        }
+
+        .project-mobile-photo {
+            width: 270px;
+            height: 550px;
+            position: absolute;
+            top: 20px;
+            left: 13px;
+            z-index: -1;
+        }
+
+        .project-description {
+            margin-left: 20%;
+            margin-top: 10px;
+        }
+
+        .project-description h1 {
+            font-size: x-large;
+            margin-bottom: 20px;
+        }
+
+        .project-description-keywords {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+        }
+
+        .project-tags {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #f2f2f2;
+            padding: 10px;
+            border-left: 3px solid #7843e9;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .project-description-link-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+        }
+
+        .project-description-link-buttons button {
+            padding: 10px;
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .project-description-link-buttons button:hover {
+            cursor: pointer;
+        }
+
+
+        @media screen and (max-width: 1000px) {
+            .project-mobile-container {
+                display: none;
+            }
+
+            .project-container {
+                display: block;
+                align-items: center;
+                padding: 0px 40px;
+                margin-bottom: 40px;
+            }
+
+            .project-description {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
         }
     </style>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Montserrat:ital,wght@1,300&family=Sofia+Sans:wght@100&display=swap" rel="stylesheet">
 </head>
-<body >
-        <div class="heading">
-            <h1 class="Welcomeh1">WELCOME.</h1>
-            <table>
-                <tr>
-                    <td>
-                        <div class="vl"></div>
-                    </td>
-                    <td>
-                        <h2>
-                            My name is SOHAM SAKARIA, an enthusiastic web and app developer. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod nulla ac erat cursus, quis ornare diam cursus. Suspendisse commodo mi in tortor imperdiet, sed suscipit nisi pharetra. Cras consequat justo dictum justo egestas, et sollicitudin lectus mattis. Duis commodo congue fringilla. Nunc a est nec dolor porta porttitor. Duis sodales lectus at neque congue, ac auctor tellus sagittis. Nam non vulputate lacus. Nunc non gravida lectus, sed fermentum magna. Phasellus lacinia fermentum congue.
-                        </h2>
-                    </td>
-                </tr>
-            </table>
+
+<body>
+    <section class="projects">
+        <section class="padding"></section>
+        <div class="sub-heading">
+            <h1>Projects</h1>
+            <div class="sub-heading-line"></div>
         </div>
 
+        <div class="project-container">
+            <div class="project-mobile-container">
+                <img src="css/Images/mobile.png" alt="" class="project-mobile">
+                <img src="css/Images/ThinkArt.png" alt="" class="project-mobile-photo">
+            </div>
 
+            <div class="project-description">
+                <h1>ThinkArt</h1>
+                <p>ThinkArt is a flutter application based on selling
+                    of art/paintings in the digital market. In the
+                    current market , due to COVID 19, many artists
+                    have lost their jobs and also all public art
+                    galleries and public auction of paintings are
+                    closed. This is where ThinkArt comes in. This
+                    application has everything a customer wants
+                    when going to look for buying a painting.</p>
+                <div class="project-description-keywords">
+                    <div class="project-tags">
+                        <h3>Flutter development</h3>
+                    </div>
+                    <div class="project-tags">
+                        <h3>Blockchain</h3>
+                    </div>
+                </div>
+                <div class="project-description-link-buttons">
+                    <a href="https://github.com/Soham-2411/ThinkArt" target="_blank">
+                        <button>
+                            Github
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-mobile-container">
+                <img src="css/Images/mobile.png" alt="" class="project-mobile">
+                <img src="css/Images/ScholarAid.jpg" alt="" class="project-mobile-photo">
+            </div>
 
-    
-<div class="contactme">
-    <h1>Contact Me</h1>
-    <a href="https://github.com/Soham-2411" target="_blank"><img src="Images/github.png" alt=""></a>
-    <a href="https://www.linkedin.com/in/soham-sakaria-13251718b/" target="_blank"><img src="Images/linkedin.png" alt=""></a>
-    <a href="https://twitter.com/sohamsakaria"target="_blank"><img src="Images/twitter.png" alt=""></a> 
-    <a href="mailto:sohamsakaria@gmail.com"target="_blank"><img src="Images/mail.png" alt=""></a> 
-</div>
+            <div class="project-description">
+                <h1>ScholarAid</h1>
+                <p>ScholarAid(Android application) aims to provide a very different
+                    approach to online studying. Students can
+                    experience lab classes in augmented reality for
+                    a better online understanding of lab classes.
+                    Along with that, it provides an AI paraphrasing
+                    system where users can enter a paragraph and
+                    the AI will summarize and create a quiz based on
+                    the info.
+                </p>
+                <div class="project-description-keywords">
+                    <div class="project-tags">
+                        <h3>Flutter development</h3>
+                    </div>
+                    <div class="project-tags">
+                        <h3>AR</h3>
+                    </div>
+                </div>
+                <div class="project-description-link-buttons">
+                    <a href="https://github.com/Soham-2411/ScholarAid" target="_blank">
+                        <button>
+                            Github
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-mobile-container">
+                <img src="css/Images/mobile.png" alt="" class="project-mobile">
+                <img src="css/Images/SaferX.jpeg" alt="" class="project-mobile-photo">
+            </div>
 
-
+            <div class="project-description">
+                <h1>ScholarAid</h1>
+                <p>This application was made in collaboration. It is an
+                    android mobile application based in flutter
+                    which will ensure Women Safety and Security in
+                    India. This application aims at providing
+                    instant help to women in need and also provide
+                    information to women who are not sure how to
+                    get rid of risky situations while traveling in any
+                    part of India.
+                </p>
+                <div class="project-description-keywords">
+                    <div class="project-tags">
+                        <h3>Flutter development</h3>
+                    </div>
+                    <div class="project-tags">
+                        <h3>Speech-to-text</h3>
+                    </div>
+                </div>
+                <div class="project-description-link-buttons">
+                    <a href="https://github.com/Ctrl-Alt-Eliiiteee/SaferX" target="_blank">
+                        <button>
+                            Github
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
-</html> -->
+
+</html>
