@@ -71,31 +71,33 @@
     display: flex;
     flex-direction: row;
     justify-content: start;
+    margin-right: 20px;
 }
 
 .project-description-link-buttons button {
     padding: 10px;
-    width: 200px;
+    width: 10vw;
     border-radius: 10px;
     margin-right: 20px;
 }
 
 
 @media screen and (max-width: 1000px) {
-    .project-mobile-container {
-        display: none;
-    }
 
-    .project-container {
+    /* .project-container {
         display: block;
         align-items: center;
         padding: 0px 40px;
         margin-bottom: 40px;
-    }
+    } */
 
-    .project-description {
+    /* .project-description {
         margin-left: 0px;
         margin-right: 0px;
+    } */
+
+    .project-description-link-buttons button{
+        width: 30vw;
     }
 
     .project-grid-container{
