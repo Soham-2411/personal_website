@@ -84,18 +84,6 @@
 
 @media screen and (max-width: 1000px) {
 
-    /* .project-container {
-        display: block;
-        align-items: center;
-        padding: 0px 40px;
-        margin-bottom: 40px;
-    } */
-
-    /* .project-description {
-        margin-left: 0px;
-        margin-right: 0px;
-    } */
-
     .project-description-link-buttons button{
         width: 30vw;
     }
