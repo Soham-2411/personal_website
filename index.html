@@ -4,480 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soham Sakaria</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/homestyles.css">
-    <link rel="stylesheet" href="css/aboutstyles.css">
-    <link rel="stylesheet" href="css/experiencestyles.css">
-    <link rel="stylesheet" href="css/projectstyles.css">
-    <link rel="stylesheet" href="css/contactstyles.css">
+    <title>Redirecting...</title>
+    <!-- Redirect after 0 seconds -->
+    <meta http-equiv="refresh" content="0; url=https://portfolio-alpha-nine-32gk3ymqe2.vercel.app/">
+    <!-- Fallback for browsers that don't support meta refresh -->
+    <script>
+        window.location.href = "https://portfolio-alpha-nine-32gk3ymqe2.vercel.app/";
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .redirect-message {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 
-<!----------------------------------- NavBar ----------------------------------->
-
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <ul class="sidebar">
-                <li onclick="hideSideBar()">
-                    <a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                            <path
-                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                        </svg></a>
-                </li>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#experience">Experience</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-            <ul class="mainbar">
-                <li style="opacity: 1;">
-                    <div></div>
-                </li>
-                <li class="hideOnMobile">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="hideOnMobile">
-                    <a href="#about">About</a>
-                </li>
-                <li class="hideOnMobile">
-                    <a href="#experience">Experience</a>
-                </li>
-                <li class="hideOnMobile">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="hideOnMobile">
-                    <a href="#contact">Contact</a>
-                </li>
-                <li class="menu-button" onclick="showSideBar()">
-                    <a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                        </svg></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!----------------------------------- Home ----------------------------------->
-    <section id="home">
-        <div class="name-container">
-            <h4>
-                Hi, my name is
-            </h4>
-            <h1>
-                Soham Sakaria.
-            </h1>
-            <h1 style="opacity:0.8;" class="name-tagline">
-                I build apps for mobile and web.
-            </h1>
-            <p>
-                I am a student at Concordia University, pursuing Masters in Applied Computer science. I have a strong
-                passion for development, particularly in the realm of front-end work. I develop mobile applications with
-                Flutter and developing web applications using ReactJS.
-            </p>
-            <a href="#about">
-                <button class="aboutme-button">
-                    About me
-                </button>
-            </a>
-        </div>
-        <a href="Soham Sakaria CV.pdf" download class="resume">
-            <button>Resume<i class="fa fa-download" style="color: white; padding-left: 5px;"></i></button>
-        </a>
-
-    </section>
-    <!----------------------------------- About ----------------------------------->
-    <div class="separationline"></div>
-    <section id="about">
-        <div class="sub-heading">
-            <h1>ABOUT ME</h1>
-            <div class="sub-heading-line"></div>
-            <p class="aboutme-short-desc">
-                Here, you will find more information about me, what I do, and my current skills in terms
-                of programming and technology.
-            </p>
-        </div>
-        <div class="skillsection-container">
-            <div class="skillsection-knowme">
-                <h2> Get to know me!</h2>
-                <p id="know-me-description">
-                    As a Front-end Developer, I construct the user interfaces for both mobile apps and
-                    websites, helping to the overall success of each product. You may explore the
-                    projects section to see examples of my work.
-                </p>
-                <p id="know-me-description" style="margin-top: 10px;">
-                    Applying my skills, I've actively participated in numerous hackathons, achieving
-                    success in several. My strength lies in exceptional team collaboration. Additionally,
-                    I have gained industry experience through internships in mobile development.
-                </p>
-                <p id="know-me-description" style="margin-top: 10px;">
-                    I'm open to Internship and job opportunities where I can contribute, learn and grow. If you
-                    have a good opportunity that matches my skills, then please do not hesitate to
-                    contact me.
-                </p>
-                <a href="#contact">
-                    <button class="contact-button">
-                        Contact
-                    </button>
-                </a>
-            </div>
-            <div class="skillsection-skills">
-                <h2>My Skills</h2>
-                <div class="skillsection-listedskills-container">
-                    <div class="listedskills">HTML5</div>
-                    <div class="listedskills">CSS3</div>
-                    <div class="listedskills">JavaScript</div>
-                </div>
-                <div class="skillsection-listedskills-container">
-                    <div class="listedskills">Flutter</div>
-                    <div class="listedskills">Java</div>
-                    <div class="listedskills">C/C++</div>
-                    <div class="listedskills">Python</div>
-                </div>
-                <div class="skillsection-listedskills-container">
-                    <div class="listedskills">Firebase</div>
-                    <div class="listedskills">MySql</div>
-                    <div class="listedskills">React</div>
-                    <div class="listedskills">Python</div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!----------------------------------- Experience ----------------------------------->
-    <div class="separationline"></div>
-    <section id="experience">
-        <section class="padding"></section>
-        <div class="sub-heading">
-            <h1>Experience</h1>
-            <div class="sub-heading-line"></div>
-        </div>
-        <div class="timeline">
-            <div class="timeline-container left-side">
-                <div class="timeline-dot left-dot"></div>
-                <div class="timeline-content">
-                    <h2>Mitacs Globalink Research Internship</h2>
-                    <h4>Carleton University, Ottawa, Ontario | Jul 2022 - Sep 2022</h4>
-                    <p>
-                    <ul>
-                        <li>
-                            Conducted research work under Professor David Thue on different
-                            definitions of the term “Game mechanics”.
-                        </li>
-                        <li>
-                            Made a platform for users to provide their own definition of the
-                            term using visual representations such as block diagrams.
-                        </li>
-                        <li>
-                            Used the software Unity 3d to make the application which would be
-                            tested on the public.
-                        </li>
-                    </ul>
-                    </p>
-                    <div style="height: 20px;"></div>
-                    <span class="left-arrow"></span>
-                </div>
-            </div>
-
-            <div class="timeline-container right-side">
-                <div class="timeline-dot right-dot"></div>
-                <div class="timeline-content">
-                    <h2>Android App Developer</h2>
-                    <h4>SRM University, Chennai, Tamil Nadu | Jul 2021 - Dec 2021</h4>
-                    <p>
-                    <ul>
-                        <li>
-                            Worked to participate in the development of a mobile app to track the non-documented
-                            clinical activity of the staff of Royal Brisbane and Women’s Hospital.
-                        </li>
-                        <li>
-                            Collaborated with 3 interns to develop an app to manage appointments for different patients
-                            with different doctors.
-                        </li>
-                        <li>
-                            Made the application using Flutter software.
-                        </li>
-                    </ul>
-                    </p>
-                    <div style="height: 20px;"></div>
-                    <span class="right-arrow"></span>
-                </div>
-            </div>
-
-            <div class="timeline-container left-side">
-                <div class="timeline-dot left-dot"></div>
-                <div class="timeline-content">
-                    <h2>Flutter App Developer</h2>
-                    <h4>Mentor Match India, Chennai, Tamil Nadu | Dec 2020 - Mar 2021</h4>
-                    <p>
-                    <ul>
-                        <li>
-                            Worked to participate in the development of a mobile app to track the non-documented
-                            clinical activity of the staff of Royal Brisbane and Women’s Hospital.
-                        </li>
-                        <li>
-                            Collaborated with 3 interns to develop an app to manage appointments for different patients
-                            with different doctors.
-                        </li>
-                        <li>
-                            Made the application using Flutter software.
-                        </li>
-                    </ul>
-                    </p>
-                    <div style="height: 20px;"></div>
-                    <span class="left-arrow"></span>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <div class="separationline"></div>
-    <!----------------------------------- Projects ----------------------------------->
-    <section id="projects">
-        <section class="padding"></section>
-        <div class="sub-heading">
-            <h1>Projects</h1>
-            <div class="sub-heading-line"></div>
-        </div>
-        <div class="project-grid-container">
-            <div class="project-container">
-                <div class="project-mobile-container">
-                    <img src="css/Images/mobile.png" alt="" class="project-mobile">
-                    <img src="css/Images/ThinkArt.png" alt="" class="project-mobile-photo">
-                </div>
-
-                <div class="project-description">
-                    <h1>ThinkArt</h1>
-                    <p>ThinkArt is a flutter application based on selling
-                        of art/paintings in the digital market. In the
-                        current market , due to COVID 19, many artists
-                        have lost their jobs and also all public art
-                        galleries and public auction of paintings are
-                        closed. This is where ThinkArt comes in. This
-                        application has everything a customer wants
-                        when going to look for buying a painting.</p>
-                    <div class="project-description-keywords">
-                        <div class="project-tags">
-                            <h3>Flutter</h3>
-                        </div>
-                        <div class="project-tags">
-                            <h3>Blockchain</h3>
-                        </div>
-                        <div class="project-tags">
-                            <h3>Firebase</h3>
-                        </div>
-                    </div>
-                    <div class="project-description-link-buttons">
-                        <a href="https://github.com/Soham-2411/ThinkArt" target="_blank">
-                            <button>
-                                Github
-                            </button>
-                        </a>
-                        <a href="https://devfolio.co/projects/thinkart-f364" target="_blank">
-                            <button>
-                                Devfolio
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-container">
-                <div class="project-mobile-container">
-                    <img src="css/Images/mobile.png" alt="" class="project-mobile">
-                    <img src="css/Images/ScholarAid.jpg" alt="" class="project-mobile-photo">
-                </div>
-
-                <div class="project-description">
-                    <h1>ScholarAid</h1>
-                    <p>ScholarAid(Android application) aims to provide a very different
-                        approach to online studying. Students can
-                        experience lab classes in augmented reality for
-                        a better online understanding of lab classes.
-                        Along with that, it provides an AI paraphrasing
-                        system where users can enter a paragraph and
-                        the AI will summarize and create a quiz based on
-                        the info.
-                    </p>
-                    <div class="project-description-keywords">
-                        <div class="project-tags">
-                            <h3>Flutter development</h3>
-                        </div>
-                        <div class="project-tags">
-                            <h3>AR</h3>
-                        </div>
-                    </div>
-                    <div class="project-description-link-buttons">
-                        <a href="https://github.com/Soham-2411/ScholarAid" target="_blank">
-                            <button>
-                                Github
-                            </button>
-                        </a>
-                        <a href="https://devfolio.co/projects/scholaraid-947c" target="_blank">
-                            <button>
-                                Devfolio
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-container">
-                <div class="project-mobile-container">
-                    <img src="css/Images/mobile.png" alt="" class="project-mobile">
-                    <img src="css/Images/SaferX.jpeg" alt="" class="project-mobile-photo">
-                </div>
-                <div class="project-description">
-                    <h1>SaferX</h1>
-                    <p>This application was made in collaboration. It is an
-                        android mobile application based in flutter
-                        which will ensure Women Safety and Security in
-                        India. This application aims at providing
-                        instant help to women in need and also provide
-                        information to women who are not sure how to
-                        get rid of risky situations while traveling in any
-                        part of India.
-                    </p>
-                    <div class="project-description-keywords">
-                        <div class="project-tags">
-                            <h3>Flutter development</h3>
-                        </div>
-                        <div class="project-tags">
-                            <h3>Speech-to-text</h3>
-                        </div>
-                    </div>
-                    <div class="project-description-link-buttons">
-                        <a href="https://github.com/Ctrl-Alt-Eliiiteee/SaferX" target="_blank">
-                            <button>
-                                Github
-                            </button>
-                        </a>
-                        <a href="https://devfolio.co/projects/safelink-d4ef" target="_blank">
-                            <button>
-                                Devfolio
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-container">
-                <div class="project-mobile-container">
-                    <img src="css/Images/mobile.png" alt="" class="project-mobile">
-                    <img src="css/Images/SaferX.jpeg" alt="" class="project-mobile-photo">
-                </div>
-                <div class="project-description">
-                    <h1>Elixir</h1>
-                    <p>This application was made with the pandemic in mind where people were suffering physically and
-                        mentally. The users can use
-                        the social feature to share their success stories to motivate others. They can also consult
-                        medical professionals through
-                        chat/video call. This project won Best Health Hack Synthacks Hackathon (An MLH initiative) and
-                        Best Mobile App at
-                        codestellation hackathon organised by Brandeis.
-                    </p>
-                    <div class="project-description-keywords">
-                        <div class="project-tags">
-                            <h3>Flutter development</h3>
-                        </div>
-                        <div class="project-tags">
-                            <h3>Speech-to-text</h3>
-                        </div>
-                    </div>
-                    <div class="project-description-link-buttons">
-                        <a href="https://github.com/Ctrl-Alt-Eliiiteee/Elixir/" target="_blank">
-                            <button>
-                                Github
-                            </button>
-                        </a>
-                        <a href="https://devfolio.co/projects/elixir" target="_blank">
-                            <button>
-                                Github
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-container">
-                <div class="project-mobile-container">
-                    <img src="css/Images/mobile.png" alt="" class="project-mobile">
-                    <img src="css/Images/SaferX.jpeg" alt="" class="project-mobile-photo">
-                </div>
-                <div class="project-description">
-                    <h1>Warzone-Clone</h1>
-                    <p>This project was developed as a course project for Advanced programming practices. It is a
-                        Java-based recreation of <span><a target="_blank"
-                                href="https://play.google.com/store/apps/details?id=com.warlight&hl=en&gl=US&pli=1">Warzone</a></span>,
-                        featuring player-assigned armies that can engage in territorial conflicts against opponents. The
-                        game includes an integrated AI,
-                        allowing solo players to engage in strategic battles against computer-controlled adversaries.
-                    </p>
-                    <div class="project-description-keywords">
-                        <div class="project-tags">
-                            <h3>Java</h3>
-                        </div>
-                    </div>
-                    <div class="project-description-link-buttons">
-                        <a href="https://github.com/Soham-2411/app_risk" target="_blank">
-                            <button>
-                                Github
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!----------------------------------- Contact ----------------------------------->
-    <section id="contact">
-        <div class="sub-heading">
-            <h1>Contact</h1>
-            <div class="sub-heading-line"></div>
-        </div>
-        <div class="contact-container">
-            <div class="contact-email">
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <h2>Email</h2>
-                    <input type="hidden" name="access_key" value="61e18de1-8dc2-47fc-8bd4-f9becc0978d6">
-                    <input type="text" name="name" placeholder="Your name" required>
-                    <input type="email" name="email" placeholder="Your email" required>
-                    <textarea name="message" rows="4" placeholder="Your message"></textarea>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    <!----------------------------------- Contact-links ----------------------------------->
-    <section id="contact-links">
-        <div class="contact-links-container">
-            <h2>Socials</h2>
-            <div class="contact-social-links">
-                <a href="https://www.linkedin.com/in/soham-sakaria-13251718b/" class="contact-link-button"
-                    target="_blank">
-                    <img src="css/Images/linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/Soham-2411" class="contact-link-button" target="_blank">
-                    <img src="css/Images/github.png" alt="Github">
-                </a>
-                <a href="https://twitter.com/SakariaSoh88674" class="contact-link-button" target="_blank">
-                    <img src="css/Images/twitter.png" alt="Twitter">
-                </a>
-                <a href="https://leetcode.com/sohamsakaria/" class="contact-link-button" target="_blank">
-                    <img src="css/Images/Leetcode.png" alt="Twitter">
-                </a>
-            </div>
-        </div>
-    </section>
-    <script src="app.js"></script>
+    <div class="redirect-message">
+        <h2>Redirecting to new portfolio...</h2>
+        <div class="spinner"></div>
+        <p>If you are not redirected automatically, <a href="https://portfolio-alpha-nine-32gk3ymqe2.vercel.app/">click
+                here</a></p>
+    </div>
 </body>
 
 </html>
